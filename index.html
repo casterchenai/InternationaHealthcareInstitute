@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHI - International Healthcare Institute | Healthcare Licensing Experts</title>
+    <meta name="description" content="Expert healthcare consultancy for Hong Kong clinic licensing, Cap 633 compliance, and medical training">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --deep: #0a2540;
+            --purple: #635bff;
+            --teal: #00d4aa;
+            --medical: #4169e1;
+            --text: #0a2540;
+            --text-light: #425466;
+            --bg: #ffffff;
+            --bg-soft: #f6f9fc;
+            --border: #e3e8ee;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #canvas3d { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: -1; opacity: 0.4; }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--deep); text-decoration: none; letter-spacing: -0.02em; }
+        .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+        .nav-links a { color: var(--text-light); text-decoration: none; font-weight: 500; font-size: 0.938rem; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--purple); }
+
+        .lang-btn {
+            background: var(--bg-soft);
+            border: 1px solid var(--border);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .lang-btn:hover { border-color: var(--purple); transform: translateY(-1px); }
+
+        section { padding: 0 2rem; }
+
+        .hero {
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
+            padding-top: 8rem;
+        }
+
+        .hero-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--deep) 0%, var(--medical) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--purple);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5145e5;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(99, 91, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: var(--bg-soft);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--purple);
+            transform: translateY(-2px);
+        }
+
+        .services {
+            padding: 8rem 2rem;
+            background: var(--bg-soft);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+        }
+
+        .section-intro {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 4rem;
+            max-width: 700px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(10, 37, 64, 0.08);
+            border-color: var(--purple);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--purple), var(--medical));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        footer {
+            background: var(--deep);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        footer h4 {
+            margin-bottom: 1rem;
+        }
+
+        footer a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+        }
+
+        @media (max-width: 768px) {
+            .hero-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas3d"></canvas>
+
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="logo">IHI</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="lang-btn" onclick="toggleLang()">中文 / EN</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-grid">
+            <div>
+                <h1>Healthcare Licensing & Compliance Excellence</h1>
+                <p class="hero-text">International Healthcare Institute provides expert consultancy for Hong Kong clinic licensing, Cap 633 compliance audits, and professional healthcare training.</p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+            <div id="hero-visual"></div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Core Services</h2>
+            <p class="section-intro">Comprehensive healthcare consultancy solutions tailored to your needs</p>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏥</div>
+                    <h3>Clinic Licensing</h3>
+                    <p>Complete clinic license application support, from initial consultation to final approval. We ensure your facility meets all regulatory standards.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Day Procedure Centers</h3>
+                    <p>Expert guidance for day procedure center licensing, operational compliance, and safety protocol implementation.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Cap 633 Compliance</h3>
+                    <p>Comprehensive compliance audits under the Private Healthcare Facilities Ordinance (Cap 633) for day procedure centers.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">👨‍⚕️</div>
+                    <h3>Healthcare Training</h3>
+                    <p>Professional development programs for healthcare staff, ensuring quality care delivery and regulatory compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div>
+                <h4>International Healthcare Institute</h4>
+                <p>Your trusted partner in healthcare licensing and compliance</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Room 1806, 18/F, Tung Che Commercial Centre<br>
+                246 Des Voeux Road West, Sai Ying Pun<br>
+                Hong Kong</p>
+            </div>
+            <div>
+                <h4>Get in Touch</h4>
+                <p>Tel: (852) 2838-3913<br>
+                WhatsApp: (852) 9380-8873<br>
+                Email: info@interhci.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 International Healthcare Institute. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Three.js 3D Background
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas3d'), alpha: true, antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+
+        camera.position.z = 5;
+
+        // Create abstract medical-themed geometry
+        const geometry = new THREE.IcosahedronGeometry(1, 1);
+        const material = new THREE.MeshStandardMaterial({
+            color: 0x635bff,
+            wireframe: true,
+            transparent: true,
+            opacity: 0.3
+        });
+        const mesh = new THREE.Mesh(geometry, material);
+        scene.add(mesh);
+
+        // Add multiple smaller spheres
+        for(let i = 0; i < 20; i++) {
+            const smallGeo = new THREE.SphereGeometry(0.05, 8, 8);
+            const smallMat = new THREE.MeshBasicMaterial({ color: 0x00d4aa });
+            const smallMesh = new THREE.Mesh(smallGeo, smallMat);
+            smallMesh.position.set(
+                (Math.random() - 0.5) * 8,
+                (Math.random() - 0.5) * 8,
+                (Math.random() - 0.5) * 8
+            );
+            scene.add(smallMesh);
+        }
+
+        // Lighting
+        const light = new THREE.DirectionalLight(0xffffff, 1);
+        light.position.set(5, 5, 5);
+        scene.add(light);
+        scene.add(new THREE.AmbientLight(0x404040, 0.5));
+
+        // Animation
+        function animate() {
+            requestAnimationFrame(animate);
+            mesh.rotation.x += 0.001;
+            mesh.rotation.y += 0.002;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // Resize handler
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // Language toggle (placeholder)
+        function toggleLang() {
+            alert('Language toggle feature - implement bilingual content here');
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
