@@ -8,22 +8,30 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/"/>
     <lastmod>2026-09-08</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://www.interhci.com/assets/img/home-hero.webp</image:loc><image:title>Modern medical clinic interior</image:title></image:image>
   </url>
   <url>
+    <loc>https://www.interhci.com/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.interhci.com/aboutus/</loc>
     <lastmod>2026-09-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.interhci.com/services/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <image:image><image:loc>https://www.interhci.com/assets/img/services-workflow.png</image:loc><image:title>IHI clinic licence application workflow</image:title></image:image>
   </url>
   <url>
     <loc>https://www.interhci.com/compliance-licensing-standards/</loc>
@@ -40,16 +48,223 @@
   <url>
     <loc>https://www.interhci.com/contactus/</loc>
     <lastmod>2026-09-08</lastmod>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.interhci.com/zh/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/"/>
+    <loc>https://www.interhci.com/greater-bay-area/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/greater-bay-area/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/greater-bay-area/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/greater-bay-area/"/>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/zh/greater-bay-area/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/greater-bay-area/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/greater-bay-area/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/greater-bay-area/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/greater-bay-area/invest-in-hong-kong/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/greater-bay-area/invest-in-hong-kong/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/greater-bay-area/invest-in-hong-kong/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/greater-bay-area/invest-in-hong-kong/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/zh/greater-bay-area/invest-in-hong-kong/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/greater-bay-area/invest-in-hong-kong/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/greater-bay-area/invest-in-hong-kong/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/greater-bay-area/invest-in-hong-kong/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/greater-bay-area/invest-in-mainland-china/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/greater-bay-area/invest-in-mainland-china/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/greater-bay-area/invest-in-mainland-china/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/greater-bay-area/invest-in-mainland-china/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/zh/greater-bay-area/invest-in-mainland-china/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/greater-bay-area/invest-in-mainland-china/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/greater-bay-area/invest-in-mainland-china/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/greater-bay-area/invest-in-mainland-china/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/greater-bay-area/policies/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/greater-bay-area/policies/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/greater-bay-area/policies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/greater-bay-area/policies/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/zh/greater-bay-area/policies/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/greater-bay-area/policies/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/greater-bay-area/policies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/greater-bay-area/policies/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/insights/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/zh/insights/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/insights/hk-clinic-licensing-enforcement-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/hk-clinic-licensing-enforcement-2027/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/hk-clinic-licensing-enforcement-2027/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/hk-clinic-licensing-enforcement-2027/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/zh/insights/hk-clinic-licensing-enforcement-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/hk-clinic-licensing-enforcement-2027/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/hk-clinic-licensing-enforcement-2027/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/hk-clinic-licensing-enforcement-2027/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/insights/hk-primary-evaluation-cmpr-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/hk-primary-evaluation-cmpr-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/hk-primary-evaluation-cmpr-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/hk-primary-evaluation-cmpr-2026/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/zh/insights/hk-primary-evaluation-cmpr-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/hk-primary-evaluation-cmpr-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/hk-primary-evaluation-cmpr-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/hk-primary-evaluation-cmpr-2026/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/insights/guangdong-international-medical-pilot-hospitals/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/guangdong-international-medical-pilot-hospitals/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/guangdong-international-medical-pilot-hospitals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/guangdong-international-medical-pilot-hospitals/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/zh/insights/guangdong-international-medical-pilot-hospitals/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/guangdong-international-medical-pilot-hospitals/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/guangdong-international-medical-pilot-hospitals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/guangdong-international-medical-pilot-hospitals/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/insights/gba-medicine-device-connect-71-hospitals/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/gba-medicine-device-connect-71-hospitals/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/gba-medicine-device-connect-71-hospitals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/gba-medicine-device-connect-71-hospitals/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/zh/insights/gba-medicine-device-connect-71-hospitals/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/gba-medicine-device-connect-71-hospitals/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/gba-medicine-device-connect-71-hospitals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/gba-medicine-device-connect-71-hospitals/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/insights/qianhai-hk-macao-medical-support-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/qianhai-hk-macao-medical-support-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/qianhai-hk-macao-medical-support-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/qianhai-hk-macao-medical-support-2026/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/zh/insights/qianhai-hk-macao-medical-support-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/qianhai-hk-macao-medical-support-2026/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/qianhai-hk-macao-medical-support-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/qianhai-hk-macao-medical-support-2026/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/insights/china-wholly-foreign-owned-hospitals-one-year/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/china-wholly-foreign-owned-hospitals-one-year/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/china-wholly-foreign-owned-hospitals-one-year/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/china-wholly-foreign-owned-hospitals-one-year/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/zh/insights/china-wholly-foreign-owned-hospitals-one-year/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/china-wholly-foreign-owned-hospitals-one-year/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/china-wholly-foreign-owned-hospitals-one-year/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/china-wholly-foreign-owned-hospitals-one-year/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/insights/elderly-voucher-nine-gba-cities/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/elderly-voucher-nine-gba-cities/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/elderly-voucher-nine-gba-cities/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/elderly-voucher-nine-gba-cities/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.interhci.com/zh/insights/elderly-voucher-nine-gba-cities/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.interhci.com/insights/elderly-voucher-nine-gba-cities/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://www.interhci.com/zh/insights/elderly-voucher-nine-gba-cities/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.interhci.com/insights/elderly-voucher-nine-gba-cities/"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

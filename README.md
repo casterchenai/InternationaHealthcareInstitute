@@ -16,6 +16,17 @@ emblem (deep blue #0b4a9b); headings in Source Serif 4, body in Source Sans 3.
 /compliance-licensing-standards/   Cap 633 compliance guide
 /faq/                              FAQ (native <details>, FAQPage schema)
 /contactus/                        Contact form + map
+/greater-bay-area/                 GBA hub — two-direction positioning, market stats, services, FAQ
+/greater-bay-area/invest-in-hong-kong/        Guide for mainland & overseas investors (Cap. 633)
+/greater-bay-area/invest-in-mainland-china/   Guide for HK & Macao investors (CEPA, WFOE pilot, Qianhai)
+/greater-bay-area/policies/        Policy tracker — dated timeline, each entry linked to its official source
+/insights/                         News & policy updates (index, filters, RSS at /insights/feed.xml)
+/insights/<slug>/                  Articles (NewsArticle schema, sources, related, inline CTA)
+/zh/greater-bay-area/…  /zh/insights/…   Traditional Chinese twins of all of the above, hreflang-paired
+/content/pages/*.{en,zh}.html      Source fragments for the hub pages
+/content/insights/<slug>/{en,zh}.md   Article sources (YAML front matter + Markdown)
+/tools/build.py                    Static builder: renders hub pages, articles, indexes, RSS, sitemap;
+                                   stamps the shared header/footer into every page
 /assets/css/site.css               Single stylesheet, no framework
 /assets/js/site.js                 Mobile menu, FAQ deep-linking, year (1 KB)
 /assets/img/                       Logo, OG image, clinic photos (from original site)
@@ -52,6 +63,17 @@ Google index entries carry over without redirects.
 - `sitemap.xml` (image + xhtml:link hreflang alternates) and `robots.txt`.
 - EN/繁 hreflang pairing on the home page (`en`, `zh-Hant-HK`, `x-default`); FAQPage schema on both home pages and the full FAQ page.
 - No Squarespace runtime: page weight drops from ~2 MB of JS to a few KB.
+
+## Adding a news article
+
+1. Create `content/insights/<slug>/en.md` (and optionally `zh.md`) with front matter:
+   `title`, `date` (YYYY-MM-DD), `tags` (any of `hk`, `cn`, `gba`, `macao`), `excerpt`,
+   optional `standfirst` and `updated`, and `sources: [{title, url}]`. Body is Markdown.
+2. Run `python3 tools/build.py` (needs `pip install markdown pyyaml`).
+3. Commit the generated `insights/…`, `zh/insights/…`, `sitemap.xml` and feeds along with the source.
+
+The three newest articles are injected automatically into both home pages. To add a policy-tracker
+entry, edit `content/pages/policies.en.html` / `policies.zh.html` and rebuild.
 
 ## Contact form
 

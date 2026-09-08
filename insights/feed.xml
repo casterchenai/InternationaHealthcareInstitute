@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>IHI Insights — Hong Kong &amp; Greater Bay Area healthcare policy</title>
+  <link>https://www.interhci.com/insights/</link>
+  <atom:link href="https://www.interhci.com/insights/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Policy updates and news for healthcare investors and operators.</description>
+  <language>en-hk</language>
+  <lastBuildDate>Tue, 08 Sep 2026 01:41:49 +0000</lastBuildDate>
+  <item>
+    <title>Hong Kong clinic licensing: 118 licences issued, full enforcement targeted for end-2027</title>
+    <link>https://www.interhci.com/insights/hk-clinic-licensing-enforcement-2027/</link>
+    <guid isPermaLink="true">https://www.interhci.com/insights/hk-clinic-licensing-enforcement-2027/</guid>
+    <pubDate>Mon, 15 Jun 2026 09:00:00 +0800</pubDate>
+    <description>The Health Bureau&#x27;s June 2026 update to LegCo gives the first hard numbers on the new clinic regime — and a date for the penalties and naming restrictions that will make a licence unavoidable.</description>
+    <category>Hong Kong</category>
+  </item>
+  <item>
+    <title>Hong Kong&#x27;s drug regulator takes shape: primary evaluation begins, CMPR due by end-2026</title>
+    <link>https://www.interhci.com/insights/hk-primary-evaluation-cmpr-2026/</link>
+    <guid isPermaLink="true">https://www.interhci.com/insights/hk-primary-evaluation-cmpr-2026/</guid>
+    <pubDate>Tue, 14 Apr 2026 09:00:00 +0800</pubDate>
+    <description>Phase 1 of &#x27;primary evaluation&#x27; took effect on 31 March 2026, a priority pathway for HA-recommended innovative drugs followed in June, and legislation for a statutory Centre for Medical Products Regulation is before LegCo. What this means for facilities that depend on drug access.</description>
+    <category>Hong Kong</category>
+  </item>
+  <item>
+    <title>Guangdong names 25 international medical service pilot hospitals with direct settlement for Hong Kong insurers</title>
+    <link>https://www.interhci.com/insights/guangdong-international-medical-pilot-hospitals/</link>
+    <guid isPermaLink="true">https://www.interhci.com/insights/guangdong-international-medical-pilot-hospitals/</guid>
+    <pubDate>Mon, 06 Apr 2026 09:00:00 +0800</pubDate>
+    <description>A two-year provincial pilot pairs leading Guangdong hospitals with Hong Kong insurers so cross-border patients no longer pay first and claim later — and sets a benchmark for what &#x27;international&#x27; service means on the mainland.</description>
+    <category>Greater Bay Area</category><category>Mainland China</category>
+  </item>
+  <item>
+    <title>港澳藥械通 reaches 71 hospitals and a 115-product catalogue: what designation now requires</title>
+    <link>https://www.interhci.com/insights/gba-medicine-device-connect-71-hospitals/</link>
+    <guid isPermaLink="true">https://www.interhci.com/insights/gba-medicine-device-connect-71-hospitals/</guid>
+    <pubDate>Mon, 09 Feb 2026 09:00:00 +0800</pubDate>
+    <description>The fourth batch of designated hospitals (December 2025) and the 2025 catalogue (February 2026) turn a pilot into a standing programme with a legal footing, faster approvals and a new &#x27;leading product&#x27; tier. Here is how a Hong Kong-invested facility positions for designation.</description>
+    <category>Greater Bay Area</category>
+  </item>
+  <item>
+    <title>Qianhai upgrades its support for Hong Kong and Macao medical institutions — and opens it to foreign investors</title>
+    <link>https://www.interhci.com/insights/qianhai-hk-macao-medical-support-2026/</link>
+    <guid isPermaLink="true">https://www.interhci.com/insights/qianhai-hk-macao-medical-support-2026/</guid>
+    <pubDate>Mon, 26 Jan 2026 09:00:00 +0800</pubDate>
+    <description>Shenzhen&#x27;s Qianhai zone has revised the only zone-level scheme dedicated to Hong Kong and Macao medical operators, extended it to foreign and Taiwan investors, and published a 2026 application guide for support of up to RMB 20 million.</description>
+    <category>Mainland China</category><category>Greater Bay Area</category>
+  </item>
+  <item>
+    <title>Wholly foreign-owned hospitals in China, one year on: Tianjin open, Guangzhou building, Hainan unveiled</title>
+    <link>https://www.interhci.com/insights/china-wholly-foreign-owned-hospitals-one-year/</link>
+    <guid isPermaLink="true">https://www.interhci.com/insights/china-wholly-foreign-owned-hospitals-one-year/</guid>
+    <pubDate>Mon, 22 Dec 2025 09:00:00 +0800</pubDate>
+    <description>The November 2024 pilot allowing wholly foreign-owned tertiary hospitals in nine regions has produced its first opening, its first approvals in the Greater Bay Area and a set of city-level support measures. A status check for investors weighing the pilot against the CEPA route.</description>
+    <category>Mainland China</category>
+  </item>
+  <item>
+    <title>Elderly Health Care Vouchers now accepted across all nine GBA cities: what it does to cross-border demand</title>
+    <link>https://www.interhci.com/insights/elderly-voucher-nine-gba-cities/</link>
+    <guid isPermaLink="true">https://www.interhci.com/insights/elderly-voucher-nine-gba-cities/</guid>
+    <pubDate>Mon, 25 Aug 2025 09:00:00 +0800</pubDate>
+    <description>With Jiangmen, Huizhou and Zhaoqing added in August 2025, the Elderly Health Care Voucher pilot covers 21 service points in every mainland GBA city — and the 2026-27 Budget has extended the voucher reward scheme to end-2028. For operators, this is the most direct policy lever on cross-border patient flow.</description>
+    <category>Greater Bay Area</category><category>Hong Kong</category>
+  </item>
+</channel>
+</rss>
